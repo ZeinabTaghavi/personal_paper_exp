@@ -1,0 +1,142 @@
+[
+  {
+    "case_id": "synthetic-001",
+    "patient_narrative": "After leaving the hospital, I noticed that a new blood-pressure medicine was listed in my discharge instructions. Why was it started?",
+    "patient_question": [
+      {
+        "phrase_id": "0",
+        "start_char_index": 43,
+        "text": "a new blood-pressure medicine"
+      },
+      {
+        "phrase_id": "1",
+        "start_char_index": 114,
+        "text": "Why was it started?"
+      }
+    ],
+    "clinician_question": "Why was the antihypertensive medication initiated?",
+    "note_excerpt": "Discharge Summary:\nThe patient had several elevated blood-pressure readings during observation.\nA low-dose antihypertensive was started.\nThe patient tolerated meals and walked independently.",
+    "note_excerpt_sentences": [
+      {
+        "sentence_id": "1",
+        "paragraph_id": "1",
+        "start_char_index": 0,
+        "text": "Discharge Summary:"
+      },
+      {
+        "sentence_id": "2",
+        "paragraph_id": "2",
+        "start_char_index": 0,
+        "text": "The patient had several elevated blood-pressure readings during observation."
+      },
+      {
+        "sentence_id": "3",
+        "paragraph_id": "3",
+        "start_char_index": 0,
+        "text": "A low-dose antihypertensive was started."
+      },
+      {
+        "sentence_id": "4",
+        "paragraph_id": "4",
+        "start_char_index": 0,
+        "text": "The patient tolerated meals and walked independently."
+      }
+    ],
+    "clinical_specialty": ["Cardiology"],
+    "clinician_answer": "The medicine was started because repeated blood-pressure readings were elevated during observation [2,3].",
+    "clinician_answer_without_citations": "The medicine was started because repeated blood-pressure readings were elevated during observation.",
+    "clinician_answer_sentences": [
+      {
+        "id": "0",
+        "text": "The medicine was started because repeated blood-pressure readings were elevated during observation.",
+        "citations": ["2", "3"]
+      }
+    ],
+    "answers": [
+      {"sentence_id": "1", "relevance": "not-relevant"},
+      {"sentence_id": "2", "relevance": "essential"},
+      {"sentence_id": "3", "relevance": "essential"},
+      {"sentence_id": "4", "relevance": "not-relevant"}
+    ],
+    "mapping": {
+      "document_id": "SYNTHETIC_NOTE_001",
+      "document_source": "synthetic"
+    }
+  },
+  {
+    "case_id": "synthetic-002",
+    "patient_narrative": "I was treated for shortness of breath and sent home with an inhaler. What did the chest imaging show, and why do I need the inhaler?",
+    "patient_question": [
+      {
+        "phrase_id": "0",
+        "start_char_index": 69,
+        "text": "What did the chest imaging show"
+      },
+      {
+        "phrase_id": "1",
+        "start_char_index": 106,
+        "text": "why do I need the inhaler?"
+      }
+    ],
+    "clinician_question": "What supported prescribing an inhaler at discharge?",
+    "note_excerpt": "Emergency Department Course:\nChest imaging showed no focal pneumonia.\nWheezing improved after bronchodilator treatment.\nAn inhaler was prescribed for recurrent wheezing.\nFollow-up was arranged for the next week.",
+    "note_excerpt_sentences": [
+      {
+        "sentence_id": "1",
+        "paragraph_id": "1",
+        "start_char_index": 0,
+        "text": "Emergency Department Course:"
+      },
+      {
+        "sentence_id": "2",
+        "paragraph_id": "2",
+        "start_char_index": 0,
+        "text": "Chest imaging showed no focal pneumonia."
+      },
+      {
+        "sentence_id": "3",
+        "paragraph_id": "3",
+        "start_char_index": 0,
+        "text": "Wheezing improved after bronchodilator treatment."
+      },
+      {
+        "sentence_id": "4",
+        "paragraph_id": "4",
+        "start_char_index": 0,
+        "text": "An inhaler was prescribed for recurrent wheezing."
+      },
+      {
+        "sentence_id": "5",
+        "paragraph_id": "5",
+        "start_char_index": 0,
+        "text": "Follow-up was arranged for the next week."
+      }
+    ],
+    "clinical_specialty": ["Pulmonology"],
+    "clinician_answer": "The imaging did not show focal pneumonia [2]. The inhaler was prescribed because the wheezing improved with bronchodilator treatment and could recur [3,4].",
+    "clinician_answer_without_citations": "The imaging did not show focal pneumonia. The inhaler was prescribed because the wheezing improved with bronchodilator treatment and could recur.",
+    "clinician_answer_sentences": [
+      {
+        "id": "0",
+        "text": "The imaging did not show focal pneumonia.",
+        "citations": ["2"]
+      },
+      {
+        "id": "1",
+        "text": "The inhaler was prescribed because the wheezing improved with bronchodilator treatment and could recur.",
+        "citations": ["3", "4"]
+      }
+    ],
+    "answers": [
+      {"sentence_id": "1", "relevance": "not-relevant"},
+      {"sentence_id": "2", "relevance": "supplementary"},
+      {"sentence_id": "3", "relevance": "essential"},
+      {"sentence_id": "4", "relevance": "essential"},
+      {"sentence_id": "5", "relevance": "not-relevant"}
+    ],
+    "mapping": {
+      "document_id": "SYNTHETIC_NOTE_002",
+      "document_source": "synthetic"
+    }
+  }
+]

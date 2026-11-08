@@ -1,0 +1,26 @@
+{
+  "context": [
+    "Tweety is a bluebird.",
+    "Every bluebird is a bird.",
+    "Every bird is an animal.",
+    "Every animal is warm-blooded."
+  ],
+  "query": "Is Tweety warm-blooded?",
+  "prolog_query": "warm_blooded(tweety)",
+  "candidate_programs": [
+    {
+      "id": "candidate_1",
+      "program": "bluebird(tweety).\nbird(X) :- bluebird(X).\nanimal(X) :- bird(X).\nwarm_blooded(X) :- animal(X)."
+    },
+    {
+      "id": "candidate_2",
+      "program": "bluebird(tweety).\nbird(X) :- bluebird(X).\nliving_thing(X) :- bird(X).\nanimal(X) :- living_thing(X).\nwarm_blooded(X) :- animal(X)."
+    },
+    {
+      "id": "candidate_3_semantic_error",
+      "program": "bluebird(tweety).\npenguin(opus).\nbird(X) :- penguin(X).\nanimal(X) :- bird(X).\nwarm_blooded(X) :- animal(X)."
+    }
+  ],
+  "expected_votes": [true, true, false],
+  "expected_majority": true
+}

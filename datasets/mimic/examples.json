@@ -1,0 +1,52 @@
+[
+  {
+    "synthetic": true,
+    "patient": {
+      "subject_id": 900001,
+      "gender": "F",
+      "expire_flag": 0
+    },
+    "admission": {
+      "hadm_id": 800001,
+      "admittime": "2100-01-03 09:30:00",
+      "dischtime": "2100-01-08 14:00:00",
+      "admission_type": "EMERGENCY",
+      "admission_location": "EMERGENCY ROOM ADMIT",
+      "diagnosis": "SYNTHETIC EXAMPLE",
+      "hospital_expire_flag": 0
+    },
+    "icu_stay": {
+      "icustay_id": 700001,
+      "first_careunit": "MICU",
+      "last_careunit": "MICU",
+      "intime": "2100-01-03 11:00:00",
+      "outtime": "2100-01-05 18:00:00",
+      "los_days": 2.2917
+    }
+  },
+  {
+    "synthetic": true,
+    "patient": {
+      "subject_id": 900002,
+      "gender": "M",
+      "expire_flag": 0
+    },
+    "admission": {
+      "hadm_id": 800002,
+      "admittime": "2101-04-12 16:10:00",
+      "dischtime": "2101-04-15 10:20:00",
+      "admission_type": "ELECTIVE",
+      "admission_location": "PHYS REFERRAL/NORMAL DELI",
+      "diagnosis": "SYNTHETIC EXAMPLE",
+      "hospital_expire_flag": 0
+    },
+    "icu_stay": {
+      "icustay_id": 700002,
+      "first_careunit": "SICU",
+      "last_careunit": "SICU",
+      "intime": "2101-04-12 18:00:00",
+      "outtime": "2101-04-13 20:30:00",
+      "los_days": 1.1042
+    }
+  }
+]

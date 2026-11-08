@@ -1,0 +1,35 @@
+[
+  {
+    "id": "synthetic-valid-001",
+    "source_dataset": "synthetic",
+    "source_example_id": null,
+    "policy_text": "A passenger is eligible for a refund if the flight is cancelled or the departure is delayed by at least five hours.",
+    "scenario": "The passenger's flight is delayed by six hours and is not cancelled.",
+    "question": "Is the passenger eligible for a refund?",
+    "answer": "Yes.",
+    "conditions": [
+      "The departure is delayed by at least five hours."
+    ],
+    "premises_smt2": "(and (= delay_hours 6) (= flight_cancelled false))",
+    "conclusion_smt2": "refund_eligible",
+    "label": "Valid",
+    "transformation": "none",
+    "is_released_paper_example": false
+  },
+  {
+    "id": "synthetic-satisfiable-001",
+    "source_dataset": "synthetic",
+    "source_example_id": null,
+    "policy_text": "A passenger is eligible for a refund if the flight is cancelled or the departure is delayed by at least five hours.",
+    "scenario": "The departure delay is unknown and the flight is not cancelled.",
+    "question": "Is the passenger eligible for a refund?",
+    "answer": "Yes.",
+    "conditions": [],
+    "premises_smt2": "(= flight_cancelled false)",
+    "conclusion_smt2": "refund_eligible",
+    "label": "Satisfiable",
+    "transformation": "necessary delay condition removed",
+    "is_released_paper_example": false
+  }
+]
+

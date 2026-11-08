@@ -1,0 +1,15 @@
+{
+  "context": [
+    "If you have no keyboarding skills at all, you will not be able to use a computer.",
+    "If you are not able to use a computer, you will not be able to write essays using a word processor."
+  ],
+  "propositions": {
+    "A": "you have keyboarding skills",
+    "B": "you are able to use a computer",
+    "C": "you are able to write essays using a word processor"
+  },
+  "implications": [
+    {"if": "not A", "then": "not B"},
+    {"if": "not B", "then": "not C"}
+  ]
+}
