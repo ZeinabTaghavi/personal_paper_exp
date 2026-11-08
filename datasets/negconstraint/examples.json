@@ -1,0 +1,28 @@
+[
+  {
+    "synthetic": true,
+    "query": {
+      "_id": "synthetic-0",
+      "text": "Describe the city's public parks, excluding Riverside Park."
+    },
+    "positive_document": {
+      "_id": "synthetic-doc-0",
+      "text": "The city maintains several public parks, including Hilltop Garden and Central Green."
+    },
+    "relevance": 1,
+    "formulation": "A - a"
+  },
+  {
+    "synthetic": true,
+    "query": {
+      "_id": "synthetic-1",
+      "text": "Discuss Ada's novels other than North Wind and Ben's poetry other than First Light."
+    },
+    "positive_document": {
+      "_id": "synthetic-doc-1",
+      "text": "Ada published South Road and Quiet Harbor; Ben's later poetry includes Evening Rain."
+    },
+    "relevance": 1,
+    "formulation": "(A - a) ∪ (B - b)"
+  }
+]
